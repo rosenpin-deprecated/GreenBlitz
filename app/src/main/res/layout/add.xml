@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<com.faizmalkani.floatingactionbutton.ObservableScrollView
+    android:id="@+id/scroller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="Action name"
+        android:layout_alignParentTop="true"
+         />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:id="@+id/cond"
+        android:layout_below="@id/editText"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Condition"
+        android:textSize="20dp"
+        android:id="@+id/conditiontext"
+
+        android:layout_marginTop="24dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Gray" />
+    <Spinner
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:entries="@array/features"
+        android:id="@+id/spinnerFeatures"
+    />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:id="@+id/actions"
+        android:layout_below="@+id/cond"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Action"
+        android:id="@+id/action"
+        android:textSize="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Gray"
+        android:id="@+id/view2" />
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:entries="@array/condition"
+        android:id="@+id/spinnerConditions"
+/>
+</LinearLayout>
+
+</RelativeLayout>
+</com.faizmalkani.floatingactionbutton.ObservableScrollView>
+    <com.faizmalkani.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="72dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="72dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="fabClicked"
+        app:color="@color/Lime"
+        app:drawable="@drawable/ic_navigation_accept"
+        />
+    </RelativeLayout>
