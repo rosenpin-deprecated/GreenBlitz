@@ -1,27 +1,25 @@
 package com.faizmalkani.floatingactionbutton;
 
-import android.animation.ObjectAnimator;
-import android.content.Context;
-import android.content.res.TypedArray;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Point;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.util.AttributeSet;
-import android.view.Display;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.WindowManager;
-import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.Interpolator;
-import android.widget.AbsListView;
-
+        import android.animation.ObjectAnimator;
+        import android.content.Context;
+        import android.content.res.TypedArray;
+        import android.graphics.Bitmap;
+        import android.graphics.Canvas;
+        import android.graphics.Color;
+        import android.graphics.Paint;
+        import android.graphics.Point;
+        import android.graphics.drawable.BitmapDrawable;
+        import android.graphics.drawable.Drawable;
+        import android.util.AttributeSet;
+        import android.view.Display;
+        import android.view.MotionEvent;
+        import android.view.View;
+        import android.view.WindowManager;
+        import android.view.animation.AccelerateDecelerateInterpolator;
+        import android.view.animation.Interpolator;
+        import android.widget.AbsListView;
 
 public class FloatingActionButton extends View {
-
 
     private final Interpolator mInterpolator = new AccelerateDecelerateInterpolator();
     private final Paint mButtonPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -124,7 +122,6 @@ public class FloatingActionButton extends View {
             listView.setOnScrollListener(new DirectionScrollListener(this));
         }
     }
-
     public void listenToScrollView(final ObservableScrollView listView){
         if (null != listView) {
             ScrollViewListener scrollviewlistener = new ScrollViewListener() {

@@ -2,6 +2,7 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/back"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 <com.faizmalkani.floatingactionbutton.ObservableScrollView
@@ -69,8 +70,7 @@
         android:layout_height="wrap_content"
         android:spinnerMode="dropdown"
         android:entries="@array/condition"
-        android:id="@+id/spinnerConditions"
-/>
+        android:id="@+id/spinnerConditions"/>
 </LinearLayout>
 
 </RelativeLayout>
@@ -84,7 +84,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginRight="16dp"
         android:onClick="fabClicked"
-        app:color="@color/Lime"
+        app:color="@color/Red"
         app:drawable="@drawable/ic_navigation_accept"
         />
     </RelativeLayout>

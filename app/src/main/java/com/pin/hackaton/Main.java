@@ -35,7 +35,6 @@ public class Main extends Activity {
     void init(){
         lv = (EnhancedListView)findViewById(R.id.list);
         mFab = (FloatingActionButton) findViewById(R.id.fabbutton);
-        mFab.listenTo(lv);
         mAdapter = new EnhancedListAdapter();
 
         lv.setAdapter(mAdapter);
@@ -76,15 +75,12 @@ public class Main extends Activity {
         // Setting this scroll listener is required to ensure that during ListView scrolling,
         // we don't look for swipes.
         lv.setOnScrollListener(touchListener.makeScrollListener());
+        mFab.listenTo(lv);
     }
 
     void initlist(){
         actions = new ArrayList<String>();
-        for(int i = 0;i<Stuff.list.length;i++){
-            actions.add(Stuff.list[i]);
-            actions.add(Stuff.list[i]);
-            actions.add(Stuff.list[i]);
-        }
+        actions.add("hello");
     }
 
     public void fabClicked(View view) {

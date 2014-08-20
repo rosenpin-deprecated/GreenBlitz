@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Hackaton 3.0</string>
+    <string name="app_name"><OURAPP></OURAPP> 3.0</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
@@ -10,11 +10,11 @@
         <item>Send an EMAIL</item>
         <item>Call a contact</item>
         <item>Play music</item>
-        <item>Turn WIFI on</item>
+        <item>Toggle WIFI</item>
         <item>Show me the weather</item>
         <item>Open an application</item>
         <item>Read my notifications</item>
-        <item>Turn bluetooth on</item>
+        <item>Toggle Bluetooth</item>
         <item>Change volume level</item>
     </string-array>
 

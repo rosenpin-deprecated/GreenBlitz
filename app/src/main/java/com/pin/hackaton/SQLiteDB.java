@@ -83,6 +83,29 @@ public class SQLiteDB {
         return ourDatabase.insert(DATABASE_TABLE, null, cv);
     }
 
+    public String getName(long l){
+        String[] columns = new String[] {KEY_ROWID, KEY_STATE, KEY_FEATURE, KEY_Name, KEY_EXTRA1, KEY_EXTRA2, KEY_EXTRA3};
+        Cursor c = ourDatabase.query(DATABASE_TABLE, columns, KEY_ROWID + "=" + l, null, null, null, null);
+        if(c != null){
+            c.moveToFirst();
+            String name = c.getString(3);
+            return  name;
+        }
+        return null;
+    }
+    public String getAllNames(){
+        String[] columns = new String[] {KEY_ROWID, KEY_STATE, KEY_FEATURE, KEY_Name, KEY_EXTRA1, KEY_EXTRA2, KEY_EXTRA3};
+        Cursor c = ourDatabase.query(DATABASE_TABLE, columns, KEY_ROWID + "=" + 0, null, null, null, null);
+        if(c != null){
+            c.moveToFirst();
+            String name = c.getString(3);
+            return name;
+        }
+        return null;
+    }
+
+
+
     public String getData(){
         String[] columns = new String[] {KEY_ROWID, KEY_STATE, KEY_FEATURE, KEY_Name, KEY_EXTRA1, KEY_EXTRA2, KEY_EXTRA3};
         Cursor c = ourDatabase.query(DATABASE_TABLE, columns, null, null, null, null, null);
