@@ -7,10 +7,13 @@ To use it simply [download it from the google play store](https://play.google.co
 ##To add event:
 
 Tap the round add button in the bottom right corner.
+
 Fill the form.
+
 Make sure you don't leave any empty fields.
+
 
 Click confirm.
 
-#YOU ARE ALL DONE!
+[15]YOU ARE ALL DONE!
 
