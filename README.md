@@ -6,14 +6,13 @@ To use it simply [download it from the google play store](https://play.google.co
 
 ##To add event:
 
-Tap the round add button in the bottom right corner.
+1. Tap the round add button in the bottom right corner.
 
-Fill the form.
+2. Fill the form.
 
-Make sure you don't leave any empty fields.
+3. Make sure you don't leave any empty fields.
 
+4. Click confirm.
 
-Click confirm.
-
-[15]YOU ARE ALL DONE!
+YOU ARE ALL DONE!
 
