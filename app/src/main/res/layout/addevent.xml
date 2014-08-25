@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="Event name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:hint="dd/mm/yy"
+        android:inputType="date" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:hint="loaction" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:hint="Paste image link here"
+        android:inputType="textUri" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link"
+        android:hint="Link to open on click"
+        android:inputType="textUri" />
+
+    <RelativeLayout android:id="@+id/swiping_layout"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxWidth="50dp"
+            android:minWidth="50dp" />
+        <RelativeLayout
+            android:layout_toRightOf="@+id/img"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView android:id="@+id/text"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:text="שם אירוע"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/appDef"
+                android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/time"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/appDef"
+                android:layout_below="@+id/text"
+                android:layout_width="wrap_content"
+                android:text="תאריך אירוע"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/loc"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/appDef"
+                android:text="מיקום אירוע"
+                android:layout_below="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

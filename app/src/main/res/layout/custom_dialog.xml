@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:background="@color/Black"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="TITLE"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/image"/>
+
+    <TextView
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:text="TIME"
+        android:gravity="right"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"/>
+
+    <TextView
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:text="LOCATION"
+        android:gravity="right"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/time"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link"
+        android:background="@color/appDef"
+        android:text="לכתבה"
+        android:textColor="@color/Black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/location"/>
+</RelativeLayout>

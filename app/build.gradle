@@ -5,7 +5,7 @@ android {
     buildToolsVersion "20.0.0"
 
     defaultConfig {
-        applicationId "com.pin.hackaton"
+        applicationId "com.pin.greenblitz"
         minSdkVersion 14
         targetSdkVersion 20
     }
@@ -20,4 +20,5 @@ android {
 dependencies {
     compile project(':FloatingActionButton')
     compile project(':EnhancedListView')
+    compile files('libs/Parse-1.5.1.jar')
 }

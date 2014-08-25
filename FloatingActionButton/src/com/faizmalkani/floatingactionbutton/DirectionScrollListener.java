@@ -51,7 +51,6 @@ class DirectionScrollListener implements AbsListView.OnScrollListener {
             goingDown = firstVisibleItem > mPrevPosition;
         }
         if (changed && mUpdated) {
-            mFloatingActionButton.hide(false);
         }
         mPrevPosition = firstVisibleItem;
         mPrevTop = firstViewTop;

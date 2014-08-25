@@ -2,7 +2,7 @@
 <resources>
     <color name="list_bg">#ff454545</color>
     <color name="section_header">#FFCCCCCC</color>
-    <color name="appDef">#607d8b</color>
+    <color name="appDef">#00FF00</color>
     <color name="White">#FFFFFF</color>
     <color name="Ivory">#FFFFF0</color>
     <color name="LightYellow">#FFFFE0</color>

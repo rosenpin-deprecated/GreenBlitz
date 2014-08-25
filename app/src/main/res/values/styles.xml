@@ -1,7 +1,7 @@
 <resources>
 
-    <style name="AppDef" parent="android:Theme.DeviceDefault.Light">
-       <!-- <item name="android:actionBarStyle">@style/actionbar</item>-->
+    <style name="AppDef" parent="android:Theme.DeviceDefault">
+        <item name="android:actionBarStyle">@style/actionbar</item>
         <item name="android:spinnerDropDownItemStyle">@style/mySpinnerItemStyle</item>
     </style>
 
@@ -10,13 +10,14 @@
     </style>
     <style name="actionbar" parent="android:Widget.Holo.Light.ActionBar.Solid">
          <item name="android:windowContentOverlay">@null</item>
-        <item name="android:background">@color/appDef</item>
+        <item name="android:background">#00B400</item>
         <item name="android:height">60dp</item>
+        <item name="android:icon">@android:color/transparent</item>
         <item name="android:titleTextStyle">@style/TextStyle</item>
     </style>
 
     <style name="TextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/White</item>
+        <item name="android:textColor">@color/Black</item>
         <item name="android:textStyle">bold</item>
     </style>
 </resources>
